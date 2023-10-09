@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beats For Sale</title>
+    <link rel="stylesheet" href="main.css">
+  <div class="background-photo"></div>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+
+
+    main {
+      padding: 20px;
+    }
+
+    .beat-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .beat-item img {
+      width: 150px;
+      margin-right: 20px;
+    }
+
+    .beat-item audio {
+      margin-right: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+  
+</head>
+<body>
+  <button style="border: none; background-color: transparent;">
+  <img src="/Users/giolavant/CSC 102./shopping cart.jpeg" alt="Cart" style="width: 50px; height: 50px;">
+  <span id="cart-badge" class="badge" data-count="0"></span>
+</button>
+
+
+  <script>
+    var cartCount = 0; //cart count variable
+  
+    function addToCart() {
+      cartCount++; // cart count
+      updateCartBadge(cartCount); 
+    }
+  
+    function updateCartBadge(count) {
+      var cartBadge = document.getElementById('cart-badge');
+      cartBadge.setAttribute('data-count', count);
+    }
+  </script>
+
+  <header>
+    
+    <nav>
+      <ul>
+        <li><a href="/Users/giolavant/CSC 102./vonibeats.html">Home</a></li>
+        <li><a href="/Users/giolavant/CSC 102./Beats4Sale.html">Beats for Sale</a></li> 
+        <li><a href="/Users/giolavant/CSC 102./Contact.html">Contact</a></li>
+        <li><a href="/Users/giolavant/CSC 102./MixnMast.Html">Mixing/Mastering</a></li>
+        <li><a href="/Users/giolavant/CSC 102./Loopkits.html">LoopKits</a></li>   
+      </ul>
+    </nav>
+  </header>
+
+<body>
+    
+</body>
+</html>
+
+
+</head>
+<body>
+  <main>
+    <p>Here you can find a variety of high-quality beats for your music production
+
+    </p>
+
+    <p>Choose your favorite beats and add them to your cart to make a purchase.</p>
+
+    <div class="beat-item">
+      <p class="image-title">Voni Beats - "SoulFul Kings" ($35)</p>
+      <audio controls src="/Users/giolavant/Music/iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/SOULFUL - on YouTube and Site.m4a" preload="none">
+      </audio>
+      <button onclick="addToCart()" type="button">Add to Cart</button>
+    </div>
+
+    <div class="beat-item">
+      <p class="image-title">Voni Beats - "Betrayed." ($100)</p>
+      <audio controls src="/Users/giolavant/Downloads/NEW BEAT INTRO (MIXED).wav" preload="none">
+      </audio>
+      <button onclick="addToCart()" type="button">Add to Cart</button>
+    </div>
+
+    <div class="beat-item">
+      <p class="image-title">Voni Beats (ft Freddy River) - "Organic Hustle" ($100)</p>
+      <audio controls src="/Users/giolavant/Music/iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Organic Hustle w: VoniBeats 94bpm.m4a" preload="none">
+      </audio>
+      <button onclick="addToCart()" type="button">Add to Cart</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Giovanni Lavant</p>
+  </footer>
+</body>
+</html>

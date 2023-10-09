@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loopkits/Sound Kits</title>
+    <link rel="stylesheet" href="main.css">
+    <div class="background-photo"></div>
+</head>
+<body>
+    <button style="border: none; background-color: transparent;">
+        <img src="/Users/giolavant/CSC 102./shopping cart.jpeg" alt="Cart" style="width: 50px; height: 50px;">
+        <span id="cart-badge" class="badge" data-count="0"></span>
+      </button>
+      
+    <script>
+        var cartCount = 0; //cart count variable
+      
+        function addToCart() {
+          cartCount++; // cart count
+          updateCartBadge(cartCount); 
+        }
+      
+        function updateCartBadge(count) {
+          var cartBadge = document.getElementById('cart-badge');
+          cartBadge.setAttribute('data-count', count);
+        }
+      </script>

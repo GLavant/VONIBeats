@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="main.css">
+    <div class="background-photo"></div>
+</head>
+<body>
+    <button style="border: none; background-color: transparent;">
+        <img src="/Users/giolavant/CSC 102./shopping cart.jpeg" alt="Cart" style="width: 50px; height: 50px;">
+        <span id="cart-badge" class="badge" data-count="0"></span>
+      </button>
+      
+      
+        <script>
+          var cartCount = 0; //cart count variable
+        
+          function addToCart() {
+            cartCount++; // cart count
+            updateCartBadge(cartCount); 
+          }
+        
+          function updateCartBadge(count) {
+            var cartBadge = document.getElementById('cart-badge');
+            cartBadge.setAttribute('data-count', count);
+          }
+        </script>
+        <button onclick="addToCart()" type="button">Add to Cart</button>
+        <header>
+          
+          <nav>
+            <ul>
+                <li><a href="/Users/giolavant/CSC 102./vonibeats.html">Home</a></li>
+                <li><a href="/Users/giolavant/CSC 102./Beats4Sale.html">Beats for Sale</a></li> 
+                <li><a href="/Users/giolavant/CSC 102./Contact.html">Contact</a></li>
+                <li><a href="/Users/giolavant/CSC 102./MixnMast.Html">Mixing/Mastering</a></li>
+                <li><a href="/Users/giolavant/CSC 102./Loopkits.html">LoopKits</a></li> 
+            </ul>
+          </nav>
+        </header>
+</body>
+</html>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: whitesmoke;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px black;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            background-color: silver;
+            margin-bottom: 10px;
+        }
+        textarea {
+            height: 120px;
+        }
+        input[type="submit"] {
+            background-color: red;
+            color: whitesmoke;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Voni Beats</h1>
+
+    <div class="container">
+        <form action="#" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

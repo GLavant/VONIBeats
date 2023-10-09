@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voni Beats</title>
+</head>
+</html>
+  <link rel="stylesheet" href="main.css">
+  <div class="background-photo"></div>
+
+  <!--Added to give Cart a Count inside a red bubble-->
+  
+</head>
+<body>
+  <button style="border: none; background-color: transparent;">
+  <img src="/Users/giolavant/CSC 102./shopping cart.jpeg" alt="Cart" style="width: 50px; height: 50px;">
+  <span id="cart-badge" class="badge" data-count="0"></span>
+</button>
+
+
+  <script>
+    var cartCount = 0; //cart count variable
+  
+    function addToCart() {
+      cartCount++; // cart count
+      updateCartBadge(cartCount); 
+    }
+  
+    function updateCartBadge(count) {
+      var cartBadge = document.getElementById('cart-badge');
+      cartBadge.setAttribute('data-count', count);
+    }
+  </script>
+  <button onclick="addToCart()" type="button">Add to Cart</button>
+  <header>
+    
+    <nav>
+      <ul>
+        <li><a href="/Users/giolavant/CSC 102./vonibeats.html">Home</a></li>
+        <li><a href="/Users/giolavant/CSC 102./Beats4Sale.html">Beats for Sale</a></li> 
+        <li><a href="/Users/giolavant/CSC 102./Contact.html">Contact</a></li>
+        <li><a href="/Users/giolavant/CSC 102./MixnMast.Html">Mixing/Mastering</a></li>
+        <li><a href="/Users/giolavant/CSC 102./Loopkits.html">LoopKits</a></li> 
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>N e w  R e l e a s e s</h1>
+    <div style="text-align: center;">
+  <img id="Aboutme" src="/Users/giolavant/CSC 102./theaccolade.jpeg" alt="AboutVoniBeats" style="width: 250px; height: 325px;">
+  <footer>
+    Voni Beats - The Accolade (album)
+    <button onclick="openNewWindow('https://www.youtube.com/channel/UCEhgZA-QCbTsxHodhvnGEmw/featured')">Listen</button>
+  </footer>
+</div>
+
+      <section>
+        <h2>Featured Albums</h2>
+      
+        <div class="image-container">
+          <div class="image-item">
+            <img src="/Users/giolavant/Downloads/ETEFeature.jpeg" alt="Featured Albums/Singles" style="width: 150px; height: 150px;">
+            <p class="image-title">ETE Brimy - "Sunny"</p>
+            <button onclick="openNewWindow('https://www.youtube.com/watch?v=qdOLO0DbYZg')">Listen</button>
+          </div>
+        
+          <div class="image-item">
+            <img src="/Users/giolavant/Downloads/Etekings.JPG" alt="Featured Albums/Singles" style="width: 150px; height: 150px;">
+            <p class="image-title">ETE Brimy - "Nobody Special"</p>
+            <button onclick="openNewWindow('https://www.youtube.com/watch?app=desktop&v=1mZ2kJE5x3k')">Listen</button>
+          </div>
+
+          <div class="image-item">
+            <img src="/Users/giolavant/CSC 102./Skettcho.jpeg" alt="Featured Albums/Singles" style="width: 150px; height: 150px;">
+            <p class="image-title">Ete Brimy (ft.Skeetcho) - "For Certain"</p>
+            <button onclick="openNewWindow('https://youtu.be/htfWxtR160A?si=7sGQSYJn0lIuZXpb')">Listen</button>
+          </div>
+        </div>
+        
+        <script>
+          function openNewWindow(url) {
+            window.open(url);
+          }
+        </script>
+      
+      </section>
+      
+
+    <section>
+      
+    </section>
+  </main>
+
+  <footer>
+    
+  </footer>
+</body>
+</html>

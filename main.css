@@ -1,0 +1,135 @@
+header {
+  text-align: center;
+  margin-right: 200px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: whitesmoke;
+  animation: bounce 1s infinite;
+}
+
+h2 {
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+  color: whitesmoke;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center align navigation bar */
+  background-color: silver;
+  padding: 10px;
+  margin: 0; 
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0; /* Added padding 0 to remove default list padding */
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  transition: box-shadow 0.3s ease; /* Added transition for smooth animation */
+}
+
+nav a:hover {
+  box-shadow: 0 0 10px red; /* Added box-shadow to create a pop-out effect */
+}
+
+p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: whitesmoke;
+}
+
+button:hover {
+  transform: scale(1.0);
+  box-shadow: 0 0 10px gold;
+}
+
+.background-photo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/Users/giolavant/CSC 102./background.jpeg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+footer {
+  color: whitesmoke;
+  font-size: larger;
+
+}
+
+b {
+  color:gold
+
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+.image-item {
+  text-align: center;
+  margin-right: 50px;
+}
+.image-title {
+  background-color:silver;
+  
+}
+.badge {
+  position: relative;
+}
+
+.badge::after {
+  content: attr(data-count);
+  position: absolute;
+  top: -45px; /* Adjust the position as needed */
+  right: -10px; /* Adjust the position as needed */
+  background-color: red; 
+  color: white;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 20px;
+}
+#cart-badge:hover {
+    position: relative;
+  }
+  
